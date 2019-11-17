@@ -1,10 +1,5 @@
 
-INSERT INTO location (id, name, address) VALUES (1, 'ATL Airport','Atlanta airport location');
-INSERT INTO location (id, name, address) VALUES (2, 'MIA Airport','Miami airport location');
-INSERT INTO location (id, name, address) VALUES (3, 'LAX Airport','Los Angeles airport location');
-INSERT INTO location (id, name, address) VALUES (4, 'PHX Airport','Phoenix airport location');
-INSERT INTO location (id, name, address) VALUES (5, 'ORD Airport','Chicago airport location');
-
+/* https://github.com/paiv/fci-breeds/blob/master/fci-breeds.csv */
 INSERT INTO dog(id, name, breed, origin) VALUES (1,'ENGLISH POINTER','British and Irish Pointers and Setters','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (2,'ENGLISH SETTER','British and Irish Pointers and Setters','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (3,'KERRY BLUE TERRIER','Large and medium sized Terriers','IRELAND');
@@ -40,7 +35,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (37,'PORTUGUESE WATER DOG','Wate
 INSERT INTO dog(id, name, breed, origin) VALUES (38,'WELSH CORGI (CARDIGAN)','Sheepdogs','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (39,'WELSH CORGI (PEMBROKE)','Sheepdogs','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (40,'IRISH SOFT COATED WHEATEN TERRIER','Large and medium sized Terriers','IRELAND');
-INSERT INTO dog(id, name, breed, origin) VALUES (41,'YUGOSLAVIAN SHEPHERD DOG - SHARPLANINA','Molossian type','MACEDONIA');
+INSERT INTO dog(id, name, breed, origin) VALUES (41,'YUGOSLAVIAN SHEPHERD DOG - SHARPLANINA','Molossian type',''MACEDONIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (42,'JÄMTHUND','Nordic Hunting Dogs','SWEDEN');
 INSERT INTO dog(id, name, breed, origin) VALUES (43,'BASENJI','Primitive type','CENTRAL AFRICA');
 INSERT INTO dog(id, name, breed, origin) VALUES (44,'BERGER DE BEAUCE','Sheepdogs','FRANCE');
@@ -75,7 +70,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (73,'SCOTTISH TERRIER','Small si
 INSERT INTO dog(id, name, breed, origin) VALUES (74,'SEALYHAM TERRIER','Small sized Terriers','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (75,'SKYE TERRIER','Small sized Terriers','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (76,'STAFFORDSHIRE BULL TERRIER','Bull type Terriers','GREAT BRITAIN');
-INSERT INTO dog(id, name, breed, origin) VALUES (77,'CONTINENTAL TOY SPANIEL','Continental Toy Spaniel and Russian Toy','BELGIUM');
+INSERT INTO dog(id, name, breed, origin) VALUES (77,'CONTINENTAL TOY SPANIEL','Continental Toy Spaniel and Russian Toy',''BELGIUM');
 INSERT INTO dog(id, name, breed, origin) VALUES (78,'WELSH TERRIER','Large and medium sized Terriers','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (80,'GRIFFON BRUXELLOIS','Small Belgian Dogs','BELGIUM');
 INSERT INTO dog(id, name, breed, origin) VALUES (81,'GRIFFON BELGE','Small Belgian Dogs','BELGIUM');
@@ -144,7 +139,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (144,'BOXER','Molossian type','G
 INSERT INTO dog(id, name, breed, origin) VALUES (145,'LEONBERGER','Molossian type','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (146,'RHODESIAN RIDGEBACK','Related breeds','SOUTH AFRICA');
 INSERT INTO dog(id, name, breed, origin) VALUES (147,'ROTTWEILER','Molossian type','GERMANY');
-INSERT INTO dog(id, name, breed, origin) VALUES (148,'DACHSHUND','Unknown','GERMANY');
+INSERT INTO dog(id, name, breed, origin) VALUES (148,'DACHSHUND','','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (149,'BULLDOG','Molossian type','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (150,'SERBIAN HOUND','Scent hounds','SERBIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (151,'ISTRIAN SHORT-HAIRED HOUND','Scent hounds','CROATIA');
@@ -185,7 +180,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (187,'PORTUGUESE POINTING DOG','
 INSERT INTO dog(id, name, breed, origin) VALUES (188,'SLOUGHI','Short-haired Sighthounds','MOROCCO');
 INSERT INTO dog(id, name, breed, origin) VALUES (189,'FINNISH LAPPONIAN DOG','Nordic Watchdogs and Herders','FINLAND');
 INSERT INTO dog(id, name, breed, origin) VALUES (190,'HOVAWART','Molossian type','GERMANY');
-INSERT INTO dog(id, name, breed, origin) VALUES (191,'BOUVIER DES FLANDRES','Cattledogs (except Swiss Cattledogs)','BELGIUM');
+INSERT INTO dog(id, name, breed, origin) VALUES (191,'BOUVIER DES FLANDRES','Cattledogs (except Swiss Cattledogs)',''BELGIUM');
 INSERT INTO dog(id, name, breed, origin) VALUES (192,'KROMFOHRLÄNDER','Kromfohrländer','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (193,'BORZOI - RUSSIAN HUNTING SIGHTHOUND','Long-haired or fringed Sighthounds','RUSSIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (194,'BERGAMASCO SHEPHERD DOG','Sheepdogs','ITALY');
@@ -193,7 +188,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (195,'ITALIAN VOLPINO','European
 INSERT INTO dog(id, name, breed, origin) VALUES (196,'BOLOGNESE','Bichons and related breeds','ITALY');
 INSERT INTO dog(id, name, breed, origin) VALUES (197,'NEAPOLITAN MASTIFF','Molossian type','ITALY');
 INSERT INTO dog(id, name, breed, origin) VALUES (198,'ITALIAN ROUGH-HAIRED SEGUGIO','Scent hounds','ITALY');
-INSERT INTO dog(id, name, breed, origin) VALUES (199,'CIRNECO DELL ETNA','Primitive type - Hunting Dogs','ITALY');
+INSERT INTO dog(id, name, breed, origin) VALUES (199,''CIRNECO DELL''ETNA'','Primitive type - Hunting Dogs','ITALY');
 INSERT INTO dog(id, name, breed, origin) VALUES (200,'ITALIAN SIGHTHOUND','Short-haired Sighthounds','ITALY');
 INSERT INTO dog(id, name, breed, origin) VALUES (201,'MAREMMA AND THE ABRUZZES SHEEPDOG','Sheepdogs','ITALY');
 INSERT INTO dog(id, name, breed, origin) VALUES (202,'ITALIAN POINTING DOG','Continental Pointing Dogs','ITALY');
@@ -205,10 +200,10 @@ INSERT INTO dog(id, name, breed, origin) VALUES (207,'PEKINGESE','Japan Chin and
 INSERT INTO dog(id, name, breed, origin) VALUES (208,'SHIH TZU','Tibetan breeds','Tibet (China)');
 INSERT INTO dog(id, name, breed, origin) VALUES (209,'TIBETAN TERRIER','Tibetan breeds','Tibet (China)');
 INSERT INTO dog(id, name, breed, origin) VALUES (211,'CANADIAN ESKIMO DOG','Nordic Sledge Dogs','CANADA');
-INSERT INTO dog(id, name, breed, origin) VALUES (212,'SAMOYED','Nordic Sledge Dogs','NORTHERN RUSSIA');
+INSERT INTO dog(id, name, breed, origin) VALUES (212,'SAMOYED','Nordic Sledge Dogs',''NORTHERN RUSSIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (213,'HANOVERIAN SCENT HOUND','Leash (scent) Hounds','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (214,'HELLENIC HOUND','Scent hounds','GREECE');
-INSERT INTO dog(id, name, breed, origin) VALUES (215,'BICHON FRISE','Bichons and related breeds','BELGIUM');
+INSERT INTO dog(id, name, breed, origin) VALUES (215,'BICHON FRISE','Bichons and related breeds',''BELGIUM');
 INSERT INTO dog(id, name, breed, origin) VALUES (216,'PUDELPOINTER','Continental Pointing Dogs','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (217,'BAVARIAN MOUNTAIN SCENT HOUND','Leash (scent) Hounds','GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (218,'CHIHUAHUA','Chihuahueno','MEXICO');
@@ -219,7 +214,7 @@ INSERT INTO dog(id, name, breed, origin) VALUES (222,'STABIJHOUN','Continental P
 INSERT INTO dog(id, name, breed, origin) VALUES (223,'DUTCH SHEPHERD DOG','Sheepdogs','THE NETHERLANDS');
 INSERT INTO dog(id, name, breed, origin) VALUES (224,'DRENTSCHE PARTRIDGE DOG','Continental Pointing Dogs','THE NETHERLANDS');
 INSERT INTO dog(id, name, breed, origin) VALUES (225,'FILA BRASILEIRO','Molossian type','BRAZIL');
-INSERT INTO dog(id, name, breed, origin) VALUES (226,'LANDSEER (EUROPEAN CONTINENTAL TYPE)','Molossian type','GERMANY');
+INSERT INTO dog(id, name, breed, origin) VALUES (226,'LANDSEER (EUROPEAN CONTINENTAL TYPE)','Molossian type',''GERMANY');
 INSERT INTO dog(id, name, breed, origin) VALUES (227,'LHASA APSO','Tibetan breeds','Tibet (China)');
 INSERT INTO dog(id, name, breed, origin) VALUES (228,'AFGHAN HOUND','Long-haired or fringed Sighthounds','AFGHANISTAN');
 INSERT INTO dog(id, name, breed, origin) VALUES (229,'SERBIAN TRICOLOUR HOUND','Scent hounds','SERBIA');
@@ -344,8 +339,8 @@ INSERT INTO dog(id, name, breed, origin) VALUES (351,'AUSTRALIAN STUMPY TAIL CAT
 INSERT INTO dog(id, name, breed, origin) VALUES (352,'RUSSIAN TOY','Continental Toy Spaniel and Russian Toy','RUSSIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (353,'CIMARRÓN URUGUAYO','Molossian type','URUGUAY');
 INSERT INTO dog(id, name, breed, origin) VALUES (354,'POLISH HUNTING DOG','Scent hounds','POLAND');
-INSERT INTO dog(id, name, breed, origin) VALUES (355,'BOSNIAN AND HERZEGOVINIAN - CROATIAN SHEPHERD DOG','Molossian type','BOSNIA AND HERZEGOVINA');
-INSERT INTO dog(id, name, breed, origin) VALUES (356,'DANISH-SWEDISH FARMDOG','Pinscher and Schnauzer type','DENMARK');
+INSERT INTO dog(id, name, breed, origin) VALUES (355,'BOSNIAN AND HERZEGOVINIAN - CROATIAN SHEPHERD DOG','Molossian type',''BOSNIA AND HERZEGOVINA');
+INSERT INTO dog(id, name, breed, origin) VALUES (356,'DANISH-SWEDISH FARMDOG','Pinscher and Schnauzer type',''DENMARK');
 INSERT INTO dog(id, name, breed, origin) VALUES (357,'ROMANIAN BUCOVINA SHEPHERD','Molossian type','ROMANIA');
 INSERT INTO dog(id, name, breed, origin) VALUES (358,'THAI BANGKAEW DOG','Asian Spitz and related breeds','THAILAND');
 INSERT INTO dog(id, name, breed, origin) VALUES (359,'MINIATURE BULL TERRIER','Bull type Terriers','GREAT BRITAIN');
