@@ -5,6 +5,7 @@ INSERT INTO location (id, name, address) VALUES (3, 'LAX Airport','Los Angeles a
 INSERT INTO location (id, name, address) VALUES (4, 'PHX Airport','Phoenix airport location');
 INSERT INTO location (id, name, address) VALUES (5, 'ORD Airport','Chicago airport location');
 
+/* fci - breeds - definitions */
 INSERT INTO dog(id, name, breed, origin) VALUES (1,'ENGLISH POINTER','British and Irish Pointers and Setters','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (2,'ENGLISH SETTER','British and Irish Pointers and Setters','GREAT BRITAIN');
 INSERT INTO dog(id, name, breed, origin) VALUES (3,'KERRY BLUE TERRIER','Large and medium sized Terriers','IRELAND');
