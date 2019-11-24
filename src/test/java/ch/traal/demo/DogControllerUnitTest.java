@@ -56,7 +56,7 @@ public class DogControllerUnitTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(content().json("[]")); // expect a list / array
     
-    verify(dogService, times(1)).retreiveDogs();
+    verify(dogService, times(1)).retrieveDogs();
   }
 
 }

@@ -9,7 +9,7 @@ public interface DogService {
   
   /* methods */
   
-  List<Dog> retreiveDogs();
+  List<Dog> retrieveDogs();
   
   List<String> retrieveDogBreeds();
   
@@ -18,4 +18,6 @@ public interface DogService {
   String retrieveDogBreedByIdV2(Long id);
   
   List<String> retrieveDogNames();
+  
+  Dog retrieveDogById(Long id);
 }

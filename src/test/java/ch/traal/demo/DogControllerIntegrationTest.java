@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 
@@ -57,7 +58,7 @@ public class DogControllerIntegrationTest {
 //      password = "password", 
 //      roles = "USER"
 //  )
-  public void getDogList() {
+  public void getDogListTest() {
     ResponseEntity<Dog[]> response = 
         this.restTemplate
               .withBasicAuth("admin", "password")
@@ -70,7 +71,20 @@ public class DogControllerIntegrationTest {
     for (Dog dog : response.getBody()) {
       logger.info(" +++ " + dog.getName());
     }
+  }
+  
+  @Test
+  public void getDogByIdTest() {
+    ResponseEntity<Dog> response = 
+        this.restTemplate
+              .withBasicAuth("admin", "password")
+              .getForEntity("http://localhost:" + port + "/dog/1", Dog.class);
+    assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
+    assertNotNull(response.getBody());
+    assertEquals(1L, response.getBody().getId());
     
+    Dog dog = response.getBody();
+    logger.info(" ++++ " + dog.getName());
   }
 
 }

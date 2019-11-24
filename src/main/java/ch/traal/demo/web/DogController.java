@@ -35,7 +35,7 @@ public class DogController {
    */
   @GetMapping("/dog/list")
   public ResponseEntity<List<Dog>> getListOfDogs() {
-    List<Dog> retList = this.dogService.retreiveDogs();
+    List<Dog> retList = this.dogService.retrieveDogs();
     
     return ResponseEntity.ok(retList);
   }
@@ -71,6 +71,14 @@ public class DogController {
   ) {
     String breed = this.dogService.retrieveDogBreedByIdV2(id);
     return ResponseEntity.ok(breed);
+  }
+  
+  @GetMapping("/dog/{id}")
+  public ResponseEntity<Dog>  getDogById(
+      @PathVariable("id") Long id
+  ) {
+    Dog dog = this.dogService.retrieveDogById(id);
+    return ResponseEntity.ok(dog);
   }
   
   /**
